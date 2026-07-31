@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="فروشگاه فانتزی و دخترانه با طراحی کیوت و صورتی">
+  <title>پینکی‌شاپ | فروشگاه فانتزی</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--pink:#ff70a8;--pink2:#ffb6d2;--light:#fff4f8;--dark:#48283a;--muted:#8b6b7b;--white:#fff;--border:#f4dce7;--shadow:0 12px 35px rgba(221,100,145,.12)}
+*{box-sizing:border-box}body{margin:0;font-family:Vazirmatn,Arial,sans-serif;background:#fffafd;color:var(--dark)}
+button,input,select{font:inherit}button{cursor:pointer;border:0}.topbar{height:82px;background:#fff;display:flex;align-items:center;gap:25px;padding:12px 5%;position:sticky;top:0;z-index:10;border-bottom:1px solid #f8e8ef}
+.brand{display:flex;align-items:center;gap:10px;min-width:190px}.brand-icon{font-size:35px}.brand b{font-size:20px}.brand small{display:block;color:var(--muted);font-size:11px}
+.search-wrap{display:flex;flex:1;max-width:650px;background:#fff5f8;border:1px solid var(--border);border-radius:18px;overflow:hidden}.search-wrap input{flex:1;border:0;background:transparent;padding:12px 16px;outline:0}.search-wrap button{background:var(--pink);color:#fff;padding:0 22px}
+.header-actions{display:flex;gap:8px;align-items:center}.icon-btn,.user-btn{background:#fff0f5;color:var(--dark);padding:10px 13px;border-radius:13px}.user-btn{background:#ffe0ec}
+.nav{display:flex;gap:8px;padding:10px 5%;background:#fff;overflow:auto;border-bottom:1px solid #f8e8ef}.nav button{white-space:nowrap;background:#fff8fb;padding:9px 14px;border-radius:12px;color:#6d4357}.nav button:hover,.nav .admin-link{background:#ffd7e7}.admin-link{margin-right:auto}
+main{max-width:1250px;margin:auto;padding:24px 5%}.hero{min-height:340px;border-radius:32px;background:linear-gradient(135deg,#ffe6f0,#fff5f9);padding:45px 6%;display:flex;align-items:center;justify-content:space-between;overflow:hidden}.badge,.eyebrow{color:#df4f8d;font-weight:700;font-size:13px}.hero h1{font-size:42px;line-height:1.5;margin:12px 0}.hero h1 strong{color:var(--pink)}.hero p{color:var(--muted)}.primary{background:var(--pink);color:white;padding:13px 23px;border-radius:15px;box-shadow:0 7px 20px #ff70a83d}.hero-art{font-size:100px;text-align:center;transform:rotate(-5deg)}.hero-art div{font-size:125px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.features>div{background:white;border:1px solid var(--border);border-radius:18px;padding:18px;text-align:center}.features b,.features small{display:block}.features small{color:var(--muted);margin-top:5px;font-size:12px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin:45px 0 18px}.section-head h2{margin:5px 0;font-size:27px}.sort-wrap{display:flex;gap:8px;align-items:center;color:var(--muted)}select{border:1px solid var(--border);padding:10px;border-radius:12px;background:#fff}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.filter{background:#fff;border:1px solid var(--border);padding:8px 15px;border-radius:12px}.filter.active,.filter:hover{background:#ffd9e8;border-color:#ffb4cf}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product-card{background:#fff;border:1px solid var(--border);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:.2s}.product-card:hover{transform:translateY(-4px)}.product-image{height:220px;background:#fff0f6;display:flex;align-items:center;justify-content:center;font-size:90px;position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover}.discount{position:absolute;top:10px;right:10px;background:#ff5b91;color:#fff;padding:5px 9px;border-radius:9px;font-size:11px}.fav{position:absolute;left:10px;top:10px;background:#fff;border-radius:50%;width:34px;height:34px;font-size:19px}.product-info{padding:15px}.category{font-size:11px;color:#cf6a91}.product-info h3{font-size:15px;margin:5px 0 8px}.price{font-weight:800;color:#db4f89}.old-price{text-decoration:line-through;color:#bba3ad;font-size:11px;margin-right:7px}.rating{color:#f5a13a;font-size:12px}.card-actions{display:flex;gap:7px;margin-top:12px}.card-actions button{flex:1;padding:9px;border-radius:11px}.add{background:#ffe0ec;color:#bd3e72}.detail{background:#fff;border:1px solid var(--border);border-radius:25px;padding:25px}.back{background:#fff0f5;padding:9px 14px;border-radius:12px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.detail-image{min-height:420px;background:#fff0f6;border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:160px;overflow:hidden}.detail-image img{width:100%;height:100%;object-fit:cover}.detail h1{font-size:30px}.specs{background:#fff8fb;border-radius:16px;padding:15px;margin:18px 0}.specs div{display:flex;justify-content:space-between;border-bottom:1px dashed #edd7e2;padding:9px 0}.qty{display:flex;align-items:center;gap:10px;margin:18px 0}.qty button{width:34px;height:34px;border-radius:10px;background:#ffe0ec}.page{min-height:600px}.cart-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-radius:20px;overflow:hidden}.cart-table th,.cart-table td{padding:14px;border-bottom:1px solid #f4e5eb;text-align:right}.checkout-box{margin-top:20px;background:#fff0f6;padding:20px;border-radius:18px;max-width:500px;margin-right:auto}.checkout-box input{width:100%;padding:12px;border:1px solid var(--border);border-radius:12px;margin:6px 0}.empty{text-align:center;padding:80px 20px;color:var(--muted)}
+.admin-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.admin-box{background:#fff;border:1px solid var(--border);padding:20px;border-radius:20px}.admin-box input,.admin-box textarea,.admin-box select{width:100%;padding:11px;margin:6px 0;border:1px solid var(--border);border-radius:11px}.admin-box textarea{min-height:90px}.admin-box h3{margin-top:0}.preview{width:100%;height:170px;object-fit:cover;border-radius:15px;background:#fff0f6;margin:8px 0}
+footer{background:#48283a;color:#ffeaf2;display:grid;grid-template-columns:repeat(4,1fr);gap:25px;padding:45px 7%;margin-top:50px}footer p{color:#e4c6d2;line-height:2;font-size:13px}
+.toast{position:fixed;bottom:25px;left:25px;background:#48283a;color:white;padding:13px 18px;border-radius:14px;display:none;z-index:50}.hidden{display:none!important}
+@media(max-width:900px){.topbar{flex-wrap:wrap;height:auto}.search-wrap{order:3;max-width:none;flex-basis:100%}.header-actions{margin-right:auto}.products-grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.detail-grid,.admin-grid{grid-template-columns:1fr}.hero h1{font-size:31px}.hero-art{font-size:70px}.hero-art div{font-size:90px}}
+@media(max-width:520px){.products-grid{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.hero{padding:28px 6%}.hero-art{display:none}.header-actions .user-btn{display:none}.section-head{align-items:start;gap:10px;flex-direction:column}}
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-icon">🎀</span><div><b>پینکی‌شاپ</b><small>فروشگاه فانتزی و دخترانه</small></div></div>
+  <div class="search-wrap">
+    <input id="searchInput" placeholder="دنبال چی می‌گردی؟ 🔎">
+    <button onclick="applyFilters()">جستجو</button>
+  </div>
+  <div class="header-actions">
+    <button class="icon-btn" onclick="showPage('favorites')">♡ <span id="favCount">0</span></button>
+    <button class="icon-btn" onclick="showCart()">🛒 <span id="cartCount">0</span></button>
+    <button class="user-btn" onclick="showPage('account')">👤 حساب من</button>
+  </div>
+</header>
+
+<nav class="nav">
+  <button onclick="setCategory('همه')">همه محصولات</button>
+  <button onclick="setCategory('اکسسوری')">اکسسوری 🎀</button>
+  <button onclick="setCategory('لوازم تحریر')">لوازم تحریر ✏️</button>
+  <button onclick="setCategory('کیف')">کیف 👜</button>
+  <button onclick="setCategory('دکور')">دکور اتاق 🧸</button>
+  <button onclick="setCategory('پرفروش')">پرفروش‌ها 🔥</button>
+  <button onclick="setCategory('جدید')">جدیدها ✨</button>
+  <button class="admin-link" onclick="showPage('admin')">پنل مدیریت</button>
+</nav>
+
+<main id="app">
+  <section id="homePage">
+    <section class="hero">
+      <div>
+        <span class="badge">✨ پیشنهاد ویژه امروز</span>
+        <h1>دنیای کوچولوی<br><strong>فانتزی و صورتی</strong> تو! 💗</h1>
+        <p>چیزهای بامزه برای اتاق، مدرسه و استایل خودت.</p>
+        <button class="primary" onclick="scrollToProducts()">دیدن محصولات 💕</button>
+      </div>
+      <div class="hero-art">🎀<div>🧸</div>🌸</div>
+    </section>
+
+    <section class="features">
+      <div>🚚 <b>ارسال سریع</b><small>تحویل مطمئن</small></div>
+      <div>🔒 <b>پرداخت امن</b><small>درگاه بانکی</small></div>
+      <div>💝 <b>بسته‌بندی کیوت</b><small>با عشق برای تو</small></div>
+      <div>↩️ <b>مرجوعی</b><small>طبق قوانین فروشگاه</small></div>
+    </section>
+
+    <section class="section-head" id="productsSection">
+      <div><span class="eyebrow">SHOP</span><h2>محصولات دوست‌داشتنی</h2></div>
+      <div class="sort-wrap">
+        <label>مرتب‌سازی:</label>
+        <select id="sortSelect" onchange="applyFilters()">
+          <option value="default">پیشنهادی</option>
+          <option value="cheap">ارزان‌ترین</option>
+          <option value="new">جدیدترین</option>
+          <option value="best">پرفروش‌ترین</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="filter-row">
+      <button class="filter active" onclick="setCategory('همه')">همه</button>
+      <button class="filter" onclick="setCategory('اکسسوری')">اکسسوری</button>
+      <button class="filter" onclick="setCategory('لوازم تحریر')">لوازم تحریر</button>
+      <button class="filter" onclick="setCategory('کیف')">کیف</button>
+      <button class="filter" onclick="setCategory('دکور')">دکور</button>
+      <button class="filter" onclick="setCategory('تخفیف')">🔥 تخفیف‌دار</button>
+    </div>
+    <div id="productsGrid" class="products-grid"></div>
+  </section>
+
+  <section id="productPage" class="hidden page"></section>
+  <section id="cartPage" class="hidden page"></section>
+  <section id="favoritesPage" class="hidden page"></section>
+  <section id="accountPage" class="hidden page"></section>
+  <section id="adminPage" class="hidden page"></section>
+</main>
+
+<footer>
+  <div><b>🎀 پینکی‌شاپ</b><p>فروشگاه فانتزی و دخترانه</p></div>
+  <div><b>راهنما</b><p>قوانین و مقررات<br>روش‌های ارسال<br>شرایط مرجوعی</p></div>
+  <div><b>تماس با ما</b><p>📞 ۰۲۱-۱۲۳۴۵۶۷۸<br>✉️ hello@pinkishop.test</p></div>
+  <div><b>اعتماد شما 💗</b><p>نماد اعتماد<br>درگاه پرداخت امن</p></div>
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script>
+const defaultProducts=[
+{id:1,name:"گیره مو پاپیونی",category:"اکسسوری",price:89000,oldPrice:120000,stock:12,sales:87,new:true,emoji:"🎀",rating:4.9,desc:"گیره موی فانتزی و سبک مناسب استفاده روزمره.",specs:{جنس:"پارچه‌ای",رنگ:"صورتی",وزن:"۲۰ گرم"}},
+{id:2,name:"دفترچه قلبی کیوت",category:"لوازم تحریر",price:125000,oldPrice:null,stock:20,sales:61,new:true,emoji:"📔",rating:4.8,desc:"دفترچه دوست‌داشتنی برای یادداشت‌های روزانه.",specs:{تعداد_صفحه:"۸۰",قطع:"A6",جنس:"کاغذ"}},
+{id:3,name:"کیف دوشی پاستلی",category:"کیف",price:420000,oldPrice:490000,stock:7,sales:105,new:false,emoji:"👜",rating:4.7,desc:"کیف دوشی کوچک با طراحی پاستلی و بند قابل تنظیم.",specs:{جنس:"پارچه",ابعاد:"۲۰×۱۵ سانتی‌متر",بند:"قابل تنظیم"}},
+{id:4,name:"چراغ خواب خرگوشی",category:"دکور",price:560000,oldPrice:null,stock:9,sales:44,new:true,emoji:"🐰",rating:5,desc:"چراغ خواب فانتزی برای میز یا اتاق خواب.",specs:{جنس:"سیلیکون",نور:"LED",برق:"USB"}},
+{id:5,name:"استیکر پک گل و قلب",category:"لوازم تحریر",price:69000,oldPrice:85000,stock:35,sales:140,new:false,emoji:"🌸",rating:4.9,desc:"پک استیکر رنگی برای دفتر و لپ‌تاپ.",specs:{تعداد:"۳۰ عدد",ضدآب:"خیر",طرح:"گل و قلب"}},
+{id:6,name:"جاکلیدی خرسی",category:"اکسسوری",price:99000,oldPrice:null,stock:18,sales:73,new:false,emoji:"🧸",rating:4.8,desc:"جاکلیدی نرم و بامزه با طرح خرس.",specs:{جنس:"پولیشی",رنگ:"صورتی",ارتفاع:"۸ سانتی‌متر"}}
+];
+
+let products=JSON.parse(localStorage.getItem("pink_products")||"null")||defaultProducts;
+let cart=JSON.parse(localStorage.getItem("pink_cart")||"[]");
+let favorites=JSON.parse(localStorage.getItem("pink_fav")||"[]");
+let currentCategory="همه";
+
+const money=n=>new Intl.NumberFormat("fa-IR").format(n)+" تومان";
+const save=()=>{localStorage.setItem("pink_products",JSON.stringify(products));localStorage.setItem("pink_cart",JSON.stringify(cart));localStorage.setItem("pink_fav",JSON.stringify(favorites));updateCounts()};
+function toast(t){const x=document.getElementById("toast");x.textContent=t;x.style.display="block";setTimeout(()=>x.style.display="none",2200)}
+function updateCounts(){document.getElementById("cartCount").textContent=cart.reduce((s,i)=>s+i.qty,0);document.getElementById("favCount").textContent=favorites.length}
+function setCategory(c){currentCategory=c;showPage("home");applyFilters()}
+function scrollToProducts(){document.getElementById("productsSection").scrollIntoView({behavior:"smooth"})}
+function applyFilters(){
+ let q=document.getElementById("searchInput").value.trim().toLowerCase();
+ let arr=products.filter(p=>(currentCategory==="همه"||p.category===currentCategory||(currentCategory==="پرفروش"&&p.sales>80)||(currentCategory==="جدید"&&p.new)||(currentCategory==="تخفیف"&&p.oldPrice)) && (!q||p.name.toLowerCase().includes(q)));
+ const s=document.getElementById("sortSelect").value;
+ if(s==="cheap")arr.sort((a,b)=>a.price-b.price); if(s==="new")arr.sort((a,b)=>b.id-a.id); if(s==="best")arr.sort((a,b)=>b.sales-a.sales);
+ document.getElementById("productsGrid").innerHTML=arr.map(card).join("");
+}
+function card(p){let fav=favorites.includes(p.id);return `<article class="product-card">
+<div class="product-image">${p.image?`<img src="${p.image}" alt="${p.name}">`:p.emoji}<button class="fav" onclick="toggleFav(${p.id})">${fav?"♥":"♡"}</button>${p.oldPrice?'<span class="discount">تخفیف</span>':""}</div>
+<div class="product-info"><span class="category">${p.category}</span><h3>${p.name}</h3><div><span class="price">${money(p.price)}</span>${p.oldPrice?`<span class="old-price">${money(p.oldPrice)}</span>`:""}</div><div class="rating">★★★★★ <small>${p.rating}</small></div>
+<div class="card-actions"><button class="add" onclick="addToCart(${p.id})">افزودن به سبد 🛒</button><button onclick="openProduct(${p.id})">جزئیات</button></div></div></article>`}
+function addToCart(id){let p=products.find(x=>x.id===id);if(!p||p.stock<1)return toast("این محصول موجود نیست 😢");let item=cart.find(x=>x.id===id);item?item.qty++:cart.push({id,qty:1});save();toast("به سبد خرید اضافه شد 💗")}
+function toggleFav(id){favorites.includes(id)?favorites=favorites.filter(x=>x!==id):favorites.push(id);save();applyFilters()}
+function openProduct(id){let p=products.find(x=>x.id===id);showPage("product");document.getElementById("productPage").innerHTML=`<div class="detail"><button class="back" onclick="showPage('home')">← بازگشت</button><div class="detail-grid"><div class="detail-image">${p.image?`<img src="${p.image}" alt="${p.name}">`:p.emoji}</div><div><span class="category">${p.category}</span><h1>${p.name}</h1><div class="rating">★★★★★ ${p.rating}</div><h2 class="price">${money(p.price)}</h2><p>${p.desc}</p><div class="specs"><b>مشخصات فنی</b>${Object.entries(p.specs||{}).map(([k,v])=>`<div><span>${k}</span><b>${v}</b></div>`).join("")}</div><p>موجودی: <b>${p.stock}</b> عدد</p><button class="primary" onclick="addToCart(${p.id})">افزودن به سبد خرید 💕</button></div></div></div>`}
+function showCart(){showPage("cart");let total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);document.getElementById("cartPage").innerHTML=`<h2>🛒 سبد خرید</h2>${cart.length?`<table class="cart-table"><tr><th>محصول</th><th>تعداد</th><th>قیمت</th><th></th></tr>${cart.map(i=>{let p=products.find(x=>x.id===i.id);return `<tr><td>${p.name}</td><td><button onclick="changeQty(${p.id},-1)">−</button> ${i.qty} <button onclick="changeQty(${p.id},1)">+</button></td><td>${money(p.price*i.qty)}</td><td><button onclick="removeCart(${p.id})">حذف</button></td></tr>`}).join("")}</table><div class="checkout-box"><h3>نهایی کردن سفارش</h3><input id="coupon" placeholder="کد تخفیف (مثلاً PINK10)"><input id="customerName" placeholder="نام و نام خانوادگی"><input id="customerPhone" placeholder="شماره موبایل"><input id="customerAddress" placeholder="آدرس ارسال"><p>مبلغ: <b>${money(total)}</b></p><button class="primary" onclick="startPayment()">پرداخت آنلاین 🔐</button></div>`:`<div class="empty">سبد خریدت خالیه 🥺<br><button class="primary" onclick="showPage('home')">رفتن به فروشگاه</button></div>`}`}
+function changeQty(id,n){let i=cart.find(x=>x.id===id);if(!i)return;i.qty+=n;if(i.qty<1)cart=cart.filter(x=>x.id!==id);save();showCart()}
+function removeCart(id){cart=cart.filter(x=>x.id!==id);save();showCart()}
+function startPayment(){
+ const order={id:"P"+Date.now(),items:cart,customer:{name:document.getElementById("customerName").value,phone:document.getElementById("customerPhone").value,address:document.getElementById("customerAddress").value},coupon:document.getElementById("coupon").value};
+ if(!order.customer.name||!order.customer.phone||!order.customer.address)return toast("لطفاً اطلاعات سفارش را کامل کن");
+ /* اتصال واقعی به درگاه:
+    این درخواست باید به بک‌اند امن شما ارسال شود.
+    بک‌اند مبلغ را محاسبه و به API درگاه (زرین‌پال/IDPay/...) وصل می‌شود.
+ */
+ fetch("/api/payment/create",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(order)})
+ .then(r=>{if(!r.ok)throw new Error();return r.json()})
+ .then(d=>{if(d.paymentUrl)location.href=d.paymentUrl;else toast("لینک پرداخت دریافت نشد")})
+ .catch(()=>toast("درگاه هنوز تنظیم نشده؛ ابتدا بک‌اند و کلید درگاه را وصل کن 💗"));
+}
+function showPage(name){["homePage","productPage","cartPage","favoritesPage","accountPage","adminPage"].forEach(x=>document.getElementById(x).classList.add("hidden"));document.getElementById(name==="home"?"homePage":name+"Page").classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"});
+ if(name==="favorites")renderFavorites(); if(name==="account")renderAccount(); if(name==="admin")renderAdmin();}
+function renderFavorites(){let ps=products.filter(p=>favorites.includes(p.id));document.getElementById("favoritesPage").innerHTML=`<h2>♡ علاقه‌مندی‌ها</h2><div class="products-grid">${ps.length?ps.map(card).join(""):'<div class="empty">هنوز محصولی ذخیره نکردی 💕</div>'}</div>`}
+function renderAccount(){document.getElementById("accountPage").innerHTML=`<div class="detail"><h2>👤 حساب کاربری</h2><p>ورود با ایمیل، موبایل و OTP در نسخه بک‌اند قابل اتصال است.</p><div class="admin-grid"><div class="admin-box"><h3>ورود / ثبت‌نام</h3><input placeholder="ایمیل یا شماره موبایل"><button class="primary" onclick="toast('کد OTP در نسخه بک‌اند ارسال می‌شود')">دریافت کد OTP</button></div><div class="admin-box"><h3>اطلاعات حساب</h3><p>📍 آدرس‌ها</p><p>🛍 سفارش‌های من</p><p>♡ علاقه‌مندی‌ها</p></div></div></div>`}
+function renderAdmin(){document.getElementById("adminPage").innerHTML=`<h2>🎀 پنل مدیریت</h2><div class="admin-grid"><div class="admin-box"><h3>➕ افزودن محصول</h3><input id="newName" placeholder="نام محصول"><select id="newCat"><option>اکسسوری</option><option>لوازم تحریر</option><option>کیف</option><option>دکور</option></select><input id="newPrice" type="number" placeholder="قیمت"><input id="newStock" type="number" placeholder="موجودی"><input id="newImage" placeholder="لینک تصویر محصول"><input id="imageFile" type="file" accept="image/*" onchange="previewImage(event)"><img id="imagePreview" class="preview" alt="پیش‌نمایش تصویر"><textarea id="newDesc" placeholder="توضیحات محصول"></textarea><button class="primary" onclick="addProduct()">ذخیره محصول</button></div><div class="admin-box"><h3>📊 خلاصه فروشگاه</h3><p>تعداد محصولات: <b>${products.length}</b></p><p>موجودی کل: <b>${products.reduce((s,p)=>s+p.stock,0)}</b></p><p>تعداد علاقه‌مندی‌ها: <b>${favorites.length}</b></p><p>سبدهای فعال: <b>${cart.length}</b></p><hr><p>مدیریت سفارش، کاربران، تخفیف‌ها، بنرها، بلاگ و گزارش فروش در همین پنل قابل توسعه است.</p></div></div><div class="admin-box" style="margin-top:20px"><h3>محصولات فعلی</h3>${products.map(p=>`<p>• ${p.name} — ${money(p.price)} — موجودی ${p.stock} <button onclick="deleteProduct(${p.id})">حذف</button></p>`).join("")}</div>`}
+function previewImage(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>document.getElementById("imagePreview").src=r.result;r.readAsDataURL(f)}
+function addProduct(){let name=document.getElementById("newName").value,price=+document.getElementById("newPrice").value,stock=+document.getElementById("newStock").value,image=document.getElementById("newImage").value,preview=document.getElementById("imagePreview").src;image=image||((preview&&preview!=="")?preview:"");if(!name||!price)return toast("نام و قیمت را وارد کن");products.push({id:Date.now(),name,category:document.getElementById("newCat").value,price,stock:stock||0,sales:0,new:true,emoji:"🎁",rating:5,desc:document.getElementById("newDesc").value||"محصول جدید",specs:{وضعیت:"نو"},image:image.startsWith("data:")?image:image});save();toast("محصول اضافه شد ✨");renderAdmin();applyFilters()}
+function deleteProduct(id){products=products.filter(p=>p.id!==id);cart=cart.filter(i=>i.id!==id);favorites=favorites.filter(x=>x!==id);save();renderAdmin();applyFilters()}
+document.getElementById("searchInput").addEventListener("input",applyFilters);
+updateCounts();applyFilters();
+
+</script>
+</body>
+</html>
